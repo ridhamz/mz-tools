@@ -8,3 +8,7 @@ export * from './middlewares/current-user';
 export * from './middlewares/error-handler';
 export * from './middlewares/require-auth';
 export * from './middlewares/validate-request';
+export * from '../../mz-tools/src/events/base-publisher';
+export * from '../../mz-tools/src/events/base-listener';
+export * from '../../mz-tools/src/events/subjects';
+export * from '../../mz-tools/src/events/ticket-created-event';
