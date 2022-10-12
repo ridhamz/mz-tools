@@ -1,18 +1,36 @@
 "use strict";
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = function (d, b) {
+        extendStatics = Object.setPrototypeOf ||
+            ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+            function (d, b) { for (var p in b) if (Object.prototype.hasOwnProperty.call(b, p)) d[p] = b[p]; };
+        return extendStatics(d, b);
+    };
+    return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.DatabaseConnectionError = void 0;
-const custom_error_1 = require("./custom-error");
-class DatabaseConnectionError extends custom_error_1.CustomError {
-    constructor(errors) {
-        super('Error connection to database');
-        this.errors = errors;
-        this.statusCode = 500;
-        this.reason = 'Error connecting to database';
+var custom_error_1 = require("./custom-error");
+var DatabaseConnectionError = /** @class */ (function (_super) {
+    __extends(DatabaseConnectionError, _super);
+    function DatabaseConnectionError(errors) {
+        var _this = _super.call(this, 'Error connection to database') || this;
+        _this.errors = errors;
+        _this.statusCode = 500;
+        _this.reason = 'Error connecting to database';
         // only because we are extending a built in class
-        Object.setPrototypeOf(this, DatabaseConnectionError.prototype);
+        Object.setPrototypeOf(_this, DatabaseConnectionError.prototype);
+        return _this;
     }
-    serializeError() {
+    DatabaseConnectionError.prototype.serializeError = function () {
         return [{ message: this.reason }];
-    }
-}
+    };
+    return DatabaseConnectionError;
+}(custom_error_1.CustomError));
 exports.DatabaseConnectionError = DatabaseConnectionError;
