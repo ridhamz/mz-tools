@@ -22,6 +22,7 @@ declare global {
 
 export function currentUser(req: Request, res: Response, next: NextFunction) {
   if (!req.session || !req.session.jwt) return next();
+  console.log('req ', req.session);
   try {
     const payload = jwt.verify(
       req.session?.jwt,
