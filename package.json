@@ -1,9 +1,12 @@
 {
   "name": "mz-tools",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "clean": "del-cli ./build/*",
     "build": " npm run clean && tsc",

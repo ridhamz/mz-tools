@@ -31,3 +31,4 @@ __exportStar(require("../../mz-tools/src/events/base-publisher"), exports);
 __exportStar(require("../../mz-tools/src/events/base-listener"), exports);
 __exportStar(require("../../mz-tools/src/events/subjects"), exports);
 __exportStar(require("../../mz-tools/src/events/ticket-created-event"), exports);
+__exportStar(require("../../mz-tools/src/events/ticket-updated-event"), exports);
