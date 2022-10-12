@@ -13,8 +13,8 @@ export * from './middlewares/require-auth';
 export * from './middlewares/validate-request';
 
 // export nats streaming events
-export * from '../../mz-tools/src/events/base-publisher';
-export * from '../../mz-tools/src/events/base-listener';
-export * from '../../mz-tools/src/events/subjects';
-export * from '../../mz-tools/src/events/ticket-created-event';
-export * from '../../mz-tools/src/events/ticket-updated-event';
+export * from './events/base-publisher';
+export * from './events/base-listener';
+export * from './events/subjects';
+export * from './events/ticket-created-event';
+export * from './events/ticket-updated-event';
