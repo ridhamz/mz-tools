@@ -32,3 +32,5 @@ __exportStar(require("./events/base-listener"), exports);
 __exportStar(require("./events/subjects"), exports);
 __exportStar(require("./events/ticket-created-event"), exports);
 __exportStar(require("./events/ticket-updated-event"), exports);
+// export types
+__exportStar(require("./events/types/order-status"), exports);

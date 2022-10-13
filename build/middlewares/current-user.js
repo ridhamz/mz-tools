@@ -9,7 +9,6 @@ function currentUser(req, res, next) {
     var _a;
     if (!req.session || !req.session.jwt)
         return next();
-    console.log('req ', req.session);
     try {
         var payload = jsonwebtoken_1.default.verify((_a = req.session) === null || _a === void 0 ? void 0 : _a.jwt, process.env.JWT_KEY);
         req.currentUser = payload;
