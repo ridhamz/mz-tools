@@ -1,6 +1,6 @@
 {
   "name": "mz-tools",
-  "version": "4.0.3",
+  "version": "4.0.4",
   "description": "",
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
