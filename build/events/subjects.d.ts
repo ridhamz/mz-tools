@@ -3,5 +3,6 @@ export declare enum Subjects {
     TicketUpdated = "ticket:update",
     OrderCreated = "order:created",
     OrderCancelled = "order:Cancelled",
-    ExpirationComplete = "expiration:complete"
+    ExpirationComplete = "expiration:complete",
+    PaymentCreated = "payment:created"
 }
