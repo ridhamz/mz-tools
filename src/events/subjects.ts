@@ -1,4 +1,3 @@
-import { ExpirationComplete } from './expiration-complete-event';
 export enum Subjects {
   TicketCreated = 'ticket:created',
   TicketUpdated = 'ticket:update',
